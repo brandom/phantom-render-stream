@@ -154,12 +154,7 @@ var loop = function() {
     height: line.height || 960
   };
 
-  page.paperSize = line.paperSize ||
-    {
-      format: line.paperFormat || 'A4',
-      orientation: line.orientation || 'portrait',
-      margin: line.margin || '0cm'
-    };
+  page.paperSize = line.paperSize;
 
   if (line.zoomFactor) page.zoomFactor = line.zoomFactor;
 
